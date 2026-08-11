@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <title>Phone Brands</title>
+  <script src="navbar.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-[#050816] text-white"
+  style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+
+  <nav class="bg-black py-4 sm:py-6">
+    <div class="max-w-7xl mx-auto px-4 md:px-0">
+      <div class="flex items-center justify-between gap-3">
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-bold">
+          <span class="text-red-500">chisomPhone</span>Store
+        </h1>
+
+        <div class="hidden md:flex flex-1 max-w-[500px] ml-4">
+          <input type="text" placeholder="Search for phones, brands..."
+            class="w-full bg-[#141414] px-5 py-3 rounded-l-lg outline-none">
+          <button class="bg-red-500 px-6 rounded-r-lg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3 sm:gap-4 text-xl sm:text-2xl">
+          <button class="md:hidden text-xl" id="mobileSearchToggle" aria-label="Toggle search" aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button class="md:hidden text-xl" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <span class="cursor-pointer text-red-500 text-lg sm:text-xl transition-colors duration-200 hover:text-red-300"
+            data-love-toggle>♡</span>
+
+          <i class="fa-solid fa-cart-shopping relative">
+            <span class="absolute -top-2 -right-2 bg-red-500 text-xs px-2 rounded-full">1</span>
+          </i>
+        </div>
+      </div>
+
+      <div id="mobileSearch" class="mt-3 md:hidden hidden">
+        <div class="flex">
+          <input type="text" placeholder="Search for phones, brands..."
+            class="w-full bg-[#141414] px-4 py-3 rounded-l-lg outline-none text-sm">
+          <button class="bg-red-500 px-4 rounded-r-lg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <div id="mobileMenu"
+        class="mt-4 hidden flex-col items-center gap-3 text-sm sm:text-base md:flex md:flex-row md:justify-center md:gap-12">
+        <a href="in.html" class="hover:text-red-500 transition">Home</a>
+        <a href="product.html" class="hover:text-red-500 transition">Products</a>
+        <a href="Brands.html" class="text-red-500 border-b-2 border-red-500 pb-1 md:pb-2">Brands</a>
+        <a href="categories.html" class="hover:text-red-500 transition">Categories</a>
+        <a href="about.html" class="hover:text-red-500 transition">About</a>
+        <a href="contact.html" class="hover:text-red-500 transition">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 py-8 md:py-10">
+    <div class="mb-8 text-center md:text-left">
+      <p class="text-white/80 uppercase tracking-[0.3em] text-sm font-semibold">Brand Spotlight</p>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mt-3 leading-tight text-white">
+        Smartphone Brands<br class="hidden md:block" />To Own
+      </h1>
+    </div>
+
+    <section class="relative overflow-hidden rounded-[2rem] bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-600 p-6 sm:p-8 md:p-12 min-h-[360px] md:min-h-[420px]">
+      <div class="absolute w-72 h-72 bg-white/25 rounded-full top-10 left-20"></div>
+      <div class="absolute w-96 h-96 bg-white/20 rounded-full -bottom-24 right-12"></div>
+
+      <div class="relative z-10 grid gap-8 lg:grid-cols-[1fr_1.1fr_1fr] items-center">
+        <div class="max-w-sm text-center lg:text-left">
+          <p class="text-sm uppercase tracking-[0.3em] text-slate-800 font-semibold">Power meets style</p>
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 mt-3">POWER</h2>
+        </div>
+
+        <div class="flex justify-center">
+          <div class="w-full max-w-[260px] sm:max-w-[300px] rounded-[2.2rem] border-4 border-white/80 bg-white/10 p-3 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-sm">
+            <img src="./ph 1.jpeg" alt="Phone" class="w-full h-[280px] sm:h-[340px] md:h-[430px] object-cover rounded-[1.8rem]">
+          </div>
+        </div>
+
+        <div class="max-w-sm text-center lg:text-right">
+          <h2 class="text-4xl sm:text-5xl md:text-6xl font-black text-white">UPGRADE</h2>
+          <p class="text-base sm:text-lg md:text-2xl mt-4 text-slate-900 font-bold">Smartphones packed with features.</p>
+          <button class="mt-6 bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 rounded-full font-semibold transition">
+            Explore Brands
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <div class="rounded-2xl border border-slate-700 bg-black/70 p-6 text-center shadow-lg shadow-black/30 transition hover:-translate-y-1">
+        <div class="mb-3 flex justify-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-red-500/20 text-red-500">
+            <i class="fa-brands fa-apple text-2xl"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-white">Apple</h3>
+        <p class="text-slate-300 mt-2">Premium performance</p>
+      </div>
+      <div class="rounded-2xl border border-slate-700 bg-black/70 p-6 text-center shadow-lg shadow-black/30 transition hover:-translate-y-1">
+        <div class="mb-3 flex justify-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/20 text-blue-500">
+            <i class="fa-solid fa-mobile-screen-button text-2xl"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-white">Samsung</h3>
+        <p class="text-slate-300 mt-2">Innovation at scale</p>
+      </div>
+      <div class="rounded-2xl border border-slate-700 bg-black/70 p-6 text-center shadow-lg shadow-black/30 transition hover:-translate-y-1">
+        <div class="mb-3 flex justify-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-green-500/20 text-green-500">
+            <i class="fa-brands fa-google text-2xl"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-white">Google</h3>
+        <p class="text-slate-300 mt-2">Clean Android experience</p>
+      </div>
+      <div class="rounded-2xl border border-slate-700 bg-black/70 p-6 text-center shadow-lg shadow-black/30 transition hover:-translate-y-1">
+        <div class="mb-3 flex justify-center">
+          <div class="flex h-12 w-12 items-center justify-center rounded-full bg-purple-500/20 text-purple-500">
+            <i class="fa-solid fa-bolt text-2xl"></i>
+          </div>
+        </div>
+        <h3 class="text-xl font-semibold text-white">OnePlus</h3>
+        <p class="text-slate-300 mt-2">Fast and stylish</p>
+      </div>
+    </section>
+  </main>
+
+  <section class="max-w-7xl mx-auto py-12 sm:py-16 px-4 sm:px-6 lg:px-0">
+    <div class="mb-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-white">Featured Smartphone Brands</h2>
+      <p class="mt-3 text-white/70">Explore premium picks from the world’s most trusted names.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="group bg-white/95 rounded-3xl shadow-lg overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./poi 3.jpeg" class="w-full h-72 object-cover" alt="Samsung">
+        <div class="py-5 text-center">
+          <h3 class="text-4xl font-bold text-blue-700">SAMSUNG</h3>
+        </div>
+      </div>
+
+      <div class="group bg-white/95 rounded-3xl shadow-lg overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./poi 2.jpeg" class="w-full h-72 object-cover" alt="Realme">
+        <div class="py-5 text-center">
+          <span class="bg-yellow-400 px-8 py-2 rounded text-3xl font-bold">realme</span>
+        </div>
+      </div>
+
+      <div class="group bg-white/95 rounded-3xl shadow-lg overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./poi 1.jpeg" class="w-full h-72 object-cover" alt="Oppo">
+        <div class="py-5 text-center">
+          <h3 class="text-5xl font-light text-green-600">oppo</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto py-4 sm:py-8 px-4 sm:px-6 lg:px-0">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./ww 1.jpeg" alt="Xiaomi" class="w-full h-80 object-cover">
+        <div class="flex items-center justify-center gap-3 py-6">
+          <div class="w-12 h-12 bg-orange-500 rounded flex items-center justify-center text-white font-bold text-2xl">mi</div>
+          <h2 class="text-4xl font-bold text-gray-800">Xiaomi</h2>
+        </div>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./iphh.jpeg" class="w-full h-80 object-cover" alt="Apple">
+        <div class="flex justify-center py-6">
+          <img src="./apple.jpeg" alt="Apple Logo" class="h-16">
+        </div>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./noksi 21.jpeg" class="w-full h-80 object-cover" alt="Nokia">
+        <div class="py-6 text-center">
+          <h2 class="text-5xl font-extrabold text-blue-700">NOKIA</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-0">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./mm1.jpeg" alt="Motorola" class="w-full h-72 object-cover hover:scale-105 duration-300">
+        <div class="py-5 text-center">
+          <h3 class="text-3xl font-bold text-gray-800 uppercase">Motorola</h3>
+        </div>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./hawia 1.jpeg" alt="Huawei" class="w-full h-72 object-cover hover:scale-105 duration-300">
+        <div class="py-5 text-center">
+          <h3 class="text-3xl font-bold text-gray-800 uppercase">Huawei</h3>
+        </div>
+      </div>
+
+      <div class="bg-white/95 rounded-3xl overflow-hidden shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+        <img src="./red.1.jpeg" alt="Redmi" class="w-full h-72 object-cover hover:scale-105 duration-300">
+        <div class="py-5 text-center">
+          <h3 class="text-3xl font-bold text-gray-800 uppercase">Redmi</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('mobileMenu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+      });
+    }
+  </script>
+  <footer class="mt-16 border-t border-zinc-800 bg-[#0b0b0b] text-gray-400"><div class="max-w-7xl mx-auto grid gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4 sm:px-6"><div><a href="in.html" class="text-2xl font-bold text-white"><span class="text-red-500">chisomPhone</span>Store</a><p class="mt-4 max-w-xs text-sm leading-6">Find the latest phones, great prices, and accessories you can trust.</p><div class="mt-5 flex gap-4 text-lg"><a href="#" aria-label="Facebook" class="hover:text-red-500 transition"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="Instagram" class="hover:text-red-500 transition"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Twitter" class="hover:text-red-500 transition"><i class="fa-brands fa-x-twitter"></i></a></div></div><div><h2 class="font-semibold text-white">Shop</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="product.html" class="hover:text-red-500 transition">All Products</a></li><li><a href="Brands.html" class="hover:text-red-500 transition">Brands</a></li><li><a href="#" class="hover:text-red-500 transition">New Arrivals</a></li></ul></div><div><h2 class="font-semibold text-white">Customer Care</h2><ul class="mt-4 space-y-3 text-sm"><li><a href="#" class="hover:text-red-500 transition">Contact Us</a></li><li><a href="#" class="hover:text-red-500 transition">Delivery & Returns</a></li><li><a href="#" class="hover:text-red-500 transition">FAQs</a></li></ul></div><div><h2 class="font-semibold text-white">Get in touch</h2><ul class="mt-4 space-y-3 text-sm"><li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-red-500"></i><span>Lagos, Nigeria</span></li><li class="flex gap-3"><i class="fa-solid fa-phone mt-1 text-red-500"></i><a href="tel:+2348000000000" class="hover:text-red-500 transition">+234 08167830788</a></li><li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-red-500"></i><a href="mailto:hello@chisomphonestore.com" class="hover:text-red-500 transition">chisomphonestore@gmail.com</a></li></ul></div></div><div class="border-t border-zinc-800"><div class="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-5 text-center text-xs sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left"><p>© 2026 chisomPhoneStore. All rights reserved.</p><div class="flex justify-center gap-4"><a href="#" class="hover:text-white transition">Privacy</a><a href="#" class="hover:text-white transition">Terms</a></div></div></div></footer>
+</body>
+
+</html>

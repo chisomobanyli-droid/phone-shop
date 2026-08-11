@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <script src="navbar.js" defer></script>
+</head>
+<body class="min-h-screen bg-[#050816] text-white" style="background-image: url('https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1600&q=80'); background-size: cover; background-position: center; background-attachment: fixed;">
+<nav class="bg-black/90 py-4 shadow-lg shadow-black/30 md:py-6">
+  <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 lg:px-0">
+    <div class="flex w-full items-center justify-between md:w-auto">
+      <h1 class="text-2xl font-bold sm:text-3xl"><span class="text-red-500">chisomPhone</span>Store</h1>
+      <button id="menuToggle" class="rounded-full border border-white/20 p-2 text-xl text-white md:hidden" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="ml-6 hidden max-w-[500px] flex-1 md:flex">
+      <input type="text" placeholder="Search for phones, brands..." class="w-full rounded-l-lg bg-[#141414] px-5 py-3 outline-none">
+      <button class="rounded-r-lg bg-red-500 px-6"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div class="flex items-center gap-4 text-xl md:text-2xl">
+      <span class="cursor-pointer text-red-500 transition-colors duration-200 hover:text-red-300">♡</span>
+      <i class="fa-solid fa-cart-shopping relative">
+        <span class="absolute -top-2 -right-2 rounded-full bg-red-500 px-2 text-xs">1</span>
+      </i>
+    </div>
+
+    <div id="mobileMenu" class="hidden w-full flex-col gap-3 pt-2 md:hidden">
+      <div class="flex items-center">
+        <input type="text" placeholder="Search brands..." class="w-full rounded-l-lg bg-[#141414] px-4 py-3 text-sm outline-none">
+        <button class="rounded-r-lg bg-red-500 px-4 py-3"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="flex flex-wrap justify-center gap-12 text-sm text-white/90">
+        <a href="in.html" class="hover:text-red-500">Home</a>
+        <a href="product.html" class="hover:text-red-500">Products</a>
+        <a href="Brands.html" class="hover:text-red-500">Brands</a>
+        <a href="categories.html" class="hover:text-red-500">Categories</a>
+        <a href="about.html" class="hover:text-red-500">About</a>
+        <a href="contact us.html" class="text-red-500">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-6 hidden flex-wrap justify-center gap-6 text-sm md:mt-8 md:flex md:gap-12 md:text-base">
+    <a href="in.html" class="hover:text-red-500">Home</a>
+    <a href="product.html" class="hover:text-red-500">Products</a>
+    <a href="Brands.html" class="hover:text-red-500">Brands</a>
+    <a href="categories.html" class="hover:text-red-500">Categories</a>
+    <a href="about.html" class="hover:text-red-500">About</a>
+    <a href="contact us.html" class="border-b-2 border-red-500 pb-2 text-red-500">Contact</a>
+  </div>
+</nav>
+
+<section class="mx-4 mt-6 rounded-[2rem] bg-white/95 py-20 shadow-2xl shadow-black/20 sm:mx-6 lg:mx-auto lg:max-w-7xl">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900">
+        Contact Us
+      </h2>
+      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+        We'd love to hear from you. Whether you have a question about our products,
+        pricing, or anything else, our team is ready to answer all your questions.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12">
+
+      <!-- Contact Information -->
+      <div class="bg-blue-600 text-white rounded-3xl p-10">
+
+        <h3 class="text-3xl font-bold mb-8">
+          Get In Touch
+        </h3>
+
+        <div class="space-y-8">
+
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-2xl">
+              📍
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl">Address</h4>
+              <p class="text-blue-100">
+                123 Smartphone Plaza,<br>
+                Port Harcourt, Rivers State,<br>
+                Nigeria.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-2xl">
+              📞
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl">Phone</h4>
+              <p class="text-blue-100">
+                +234 08167830788
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-2xl">
+              ✉️
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl">Email</h4>
+              <p class="text-blue-100">
+                chisomphonestore@gmail.com
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <div class="w-14 h-14 rounded-full bg-white/20 flex items-center justify-center text-2xl">
+              🕒
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-xl">Working Hours</h4>
+              <p class="text-blue-100">
+                Monday - Saturday<br>
+                8:00 AM - 6:00 PM
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-3xl shadow-xl p-10 text-black">
+
+        <h3 class="text-3xl font-bold text-gray-900 mb-8">
+          Send Us a Message
+        </h3>
+
+        <form class="space-y-6">
+
+          <div>
+            <label class="block mb-2 font-semibold">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              placeholder="Enter your full name"
+              class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-semibold">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-semibold">
+              Phone Number
+            </label>
+
+            <input
+              type="tel"
+              placeholder="Enter your phone number"
+              class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-semibold">
+              Subject
+            </label>
+
+            <input
+              type="text"
+              placeholder="Enter subject"
+              class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          </div>
+
+          <div>
+            <label class="block mb-2 font-semibold">
+              Message
+            </label>
+
+            <textarea
+              rows="6"
+              placeholder="Write your message..."
+              class="w-full border rounded-xl px-5 py-4 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          </div>
+
+          <button
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-xl font-semibold text-lg transition">
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="mt-16 border-t border-zinc-800 bg-[#0b0b0b] text-gray-400">
+  <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+    <div>
+      <a href="in.html" class="text-2xl font-bold text-white"><span class="text-red-500">chisomPhone</span>Store</a>
+      <p class="mt-4 max-w-xs text-sm leading-6">Find the latest phones, great prices, and accessories you can trust.</p>
+      <div class="mt-5 flex gap-4 text-lg">
+        <a href="#" aria-label="Facebook" class="transition hover:text-red-500"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram" class="transition hover:text-red-500"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter" class="transition hover:text-red-500"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+    <div>
+      <h2 class="font-semibold text-white">Shop</h2>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="product.html" class="transition hover:text-red-500">All Products</a></li>
+        <li><a href="Brands.html" class="transition hover:text-red-500">Brands</a></li>
+        <li><a href="contact.html" class="transition hover:text-red-500">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-semibold text-white">Customer Care</h2>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="#" class="transition hover:text-red-500">Contact Us</a></li>
+        <li><a href="#" class="transition hover:text-red-500">Delivery &amp; Returns</a></li>
+        <li><a href="#" class="transition hover:text-red-500">FAQs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="font-semibold text-white">Get in touch</h2>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-red-500"></i><span>Asaba, Nigeria</span></li>
+        <li class="flex gap-3"><i class="fa-solid fa-phone mt-1 text-red-500"></i><a href="tel:+2348000000000" class="transition hover:text-red-500">+234 08167830788</a></li>
+        <li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-red-500"></i><a href="mailto:hello@chisomphonestore.com" class="transition hover:text-red-500">chisomphonestore@gmail.com</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mobileMenu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex');
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+    });
+  }
+</script>
+
+</body>
+</html>
