@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneShop | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="navbar.js" defer></script>
+</head>
+
+<body class="bg-black text-white">
+  <nav class="bg-zinc-950 shadow-md shadow-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between gap-4 py-4">
+        <a href="in.html" class="text-2xl sm:text-3xl font-bold text-blue-600">PhoneShop</a>
+
+        <form class="hidden md:flex w-1/2" action="#">
+          <label for="search" class="sr-only">Search phones</label>
+          <input id="search" type="search" placeholder="Search phones..." class="w-full rounded-l-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="bg-blue-600 text-white px-6 rounded-r-lg hover:bg-blue-700" aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="flex items-center gap-4 sm:gap-6 text-gray-300">
+          <button id="categoryMenuToggle" type="button" class="md:hidden hover:text-blue-500" aria-label="Open navigation menu" aria-expanded="false" aria-controls="categoryMobileMenu">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+          <a href="#" aria-label="My account" class="hover:text-blue-600"><i class="far fa-user text-xl"></i></a>
+          <a href="#" aria-label="Wishlist" class="hover:text-blue-600"><i class="far fa-heart text-xl"></i></a>
+          <a href="#" aria-label="Shopping cart" class="relative hover:text-blue-600"><i class="fas fa-shopping-cart text-xl"></i><span class="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-1.5 py-0.5">2</span></a>
+        </div>
+      </div>
+
+      <div class="hidden md:flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-zinc-800 py-3 text-sm font-medium text-gray-300">
+        <a href="in.html" class="hover:text-red-500">Home</a>
+        <a href="product.html" class="hover:text-blue-600">Products</a>
+        <a href="Brands.html" class="hover:text-blue-600">Brands</a>
+        <a href="categories.html" class="text-blue-600">Categories</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </div>
+
+      <div id="categoryMobileMenu" class="hidden border-t border-zinc-800 py-4 md:hidden">
+        <form class="flex" action="#">
+          <label for="mobile-search" class="sr-only">Search phones</label>
+          <input id="mobile-search" type="search" placeholder="Search phones..." class="w-full rounded-l-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="rounded-r-lg bg-blue-600 px-4 text-white hover:bg-blue-700" aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="mt-4 flex flex-col items-center gap-4 text-sm font-medium text-gray-300">
+          <a href="index.html" class="hover:text-blue-500">Home</a>
+          <a href="product.html" class="hover:text-blue-500">Products</a>
+          <a href="Brands.html" class="hover:text-blue-500">Brands</a>
+          <a href="categories.html" class="text-blue-500">Categories</a>
+          <a href="about.html" class="hover:text-blue-500">About</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto mt-8 px-4 sm:px-6">
+
+  <main class="max-w-7xl mx-auto mt-8 px-4 sm:px-6">
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-12">
+      <aside id="categories" class="md:col-span-3">
+        <div class="overflow-hidden rounded-xl bg-zinc-900 shadow shadow-black/30">
+          <div class="bg-blue-600 p-4 text-white"><h2 class="font-bold text-lg">Shop by Category</h2></div>
+          <ul class="divide-y text-sm">
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">📱 Smartphones</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">🍎 iPhone</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">📱 Samsung</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">📱 Tecno</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">📱 Infinix</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">📱 Xiaomi</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">⌚ Smart Watches</a></li>
+            <li><a href="product.html" class="block p-4 hover:bg-gray-100">🎧 Accessories</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="space-y-8 md:col-span-9">
+        <section class="relative overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-indigo-700 p-8 text-white sm:p-12">
+          <div class="relative z-10 max-w-xl">
+            <p class="font-semibold uppercase tracking-widest text-blue-100 text-sm">New arrivals</p>
+            <h1 class="mt-3 text-4xl font-bold sm:text-5xl">Latest Phones 2026</h1>
+            <p class="mt-4 text-base text-blue-50 sm:text-lg">Discover the newest smartphones from Apple, Samsung, Tecno, Infinix, Xiaomi and more.</p>
+            <a href="product.html" class="inline-block mt-8 rounded-lg bg-white px-8 py-3 font-semibold text-blue-600 transition hover:bg-blue-50">Shop Now <i class="fas fa-arrow-right ml-2"></i></a>
+          </div>
+          <i class="fas fa-mobile-screen-button absolute -right-5 -bottom-14 text-[16rem] text-white/10"></i>
+        </section>
+
+        <section class="rounded-xl bg-zinc-900 p-6 shadow shadow-black/30">
+          <div class="flex items-center justify-between gap-4"><h2 class="text-2xl font-bold">Popular Brands</h2><a href="Brands.html" class="text-sm font-medium text-blue-600 hover:underline">View All</a></div>
+          <div class="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            <a href="Brands.html" class="rounded-xl border p-5 text-center transition hover:shadow-md"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="h-12 mx-auto"><p class="mt-3 font-semibold">Apple</p></a>
+            <a href="Brands.html" class="rounded-xl border p-5 text-center transition hover:shadow-md"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" alt="Samsung" class="h-9 mx-auto mt-2"><p class="mt-4 font-semibold">Samsung</p></a>
+            <a href="Brands.html" class="rounded-xl border p-5 text-center transition hover:shadow-md"><p class="mt-3 text-2xl font-bold text-blue-700">TECNO</p><p class="mt-6 font-semibold">Tecno</p></a>
+            <a href="Brands.html" class="rounded-xl border p-5 text-center transition hover:shadow-md"><p class="mt-3 text-2xl font-bold text-indigo-700">Infinix</p><p class="mt-6 font-semibold">Infinix</p></a>
+            <a href="Brands.html" class="rounded-xl border p-5 text-center transition hover:shadow-md"><p class="mt-3 text-2xl font-bold text-orange-500">mi</p><p class="mt-6 font-semibold">Xiaomi</p></a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="py-12">
+      <div class="mb-6 flex items-center justify-between"><h2 class="text-2xl font-bold">Featured Phones</h2><a href="product.html" class="font-medium text-blue-600 hover:underline">View All</a></div>
+      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <article class="rounded-xl bg-zinc-900 p-5 shadow transition hover:-translate-y-1 hover:shadow-lg"><img src="pic.4.jpeg" alt="iPhone 15 Pro Max" class="h-48 w-full object-contain"><h3 class="mt-4 font-semibold">iPhone 15 Pro Max</h3><p class="mt-1 text-sm text-gray-400">Apple</p><p class="mt-3 text-xl font-bold text-blue-500">$1,199</p></article>
+        <article class="rounded-xl bg-zinc-900 p-5 shadow transition hover:-translate-y-1 hover:shadow-lg"><img src="pic 5.jpeg" alt="Samsung Galaxy S24 Ultra" class="h-48 w-full object-contain"><h3 class="mt-4 font-semibold">Galaxy S24 Ultra</h3><p class="mt-1 text-sm text-gray-400">Samsung</p><p class="mt-3 text-xl font-bold text-blue-500">$999</p></article>
+        <article class="rounded-xl bg-zinc-900 p-5 shadow transition hover:-translate-y-1 hover:shadow-lg"><img src="pic 6.jpeg" alt="OnePlus 12" class="h-48 w-full object-contain"><h3 class="mt-4 font-semibold">OnePlus 12</h3><p class="mt-1 text-sm text-gray-400">OnePlus</p><p class="mt-3 text-xl font-bold text-blue-500">$699</p></article>
+        <article class="rounded-xl bg-zinc-900 p-5 shadow transition hover:-translate-y-1 hover:shadow-lg"><img src="pic 7.jpeg" alt="Xiaomi 14" class="h-48 w-full object-contain"><h3 class="mt-4 font-semibold">Xiaomi</h3><p class="mt-1 text-sm text-gray-400">Xiaomi</p><p class="mt-3 text-xl font-bold text-blue-500">$799</p></article>
+      </div>
+    </section>
+
+    <section class="mb-12 rounded-xl bg-zinc-900 p-6 shadow shadow-black/30">
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-2xl font-bold">Popular Categories</h2>
+        <a href="#categories" class="font-semibold text-blue-600 hover:underline">View All</a>
+      </div>
+      <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <a href="product.html" class="rounded-xl border p-4 text-center transition hover:shadow-lg"><img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500" alt="iPhone" class="h-40 w-full rounded-lg object-cover"><h3 class="mt-4 text-lg font-bold">iPhone</h3><p class="text-sm text-gray-500">35 Products</p></a>
+        <a href="product.html" class="rounded-xl border p-4 text-center transition hover:shadow-lg"><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500" alt="Samsung phones" class="h-40 w-full rounded-lg object-cover"><h3 class="mt-4 text-lg font-bold">Samsung</h3><p class="text-sm text-gray-500">40 Products</p></a>
+        <a href="product.html" class="rounded-xl border p-4 text-center transition hover:shadow-lg"><img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500" alt="Tecno phones" class="h-40 w-full rounded-lg object-cover"><h3 class="mt-4 text-lg font-bold">Tecno</h3><p class="text-sm text-gray-500">25 Products</p></a>
+        <a href="product.html" class="rounded-xl border p-4 text-center transition hover:shadow-lg"><img src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=500" alt="Infinix phones" class="h-40 w-full rounded-lg object-cover"><h3 class="mt-4 text-lg font-bold">Infinix</h3><p class="text-sm text-gray-500">30 Products</p></a>
+      </div>
+    </section>
+
+    <section class="mb-12 rounded-xl bg-zinc-900 p-6 shadow shadow-black/30">
+      <div class="flex items-center justify-between gap-4"><h2 class="text-2xl font-bold">Best Selling Phones</h2><a href="product.html" class="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700">View All</a></div>
+      <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <article class="overflow-hidden rounded-xl border transition hover:shadow-xl"><img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=500" alt="iPhone 17 Pro Max" class="h-64 w-full object-cover"><div class="p-5"><h3 class="text-xl font-bold">iPhone 17 Pro Max</h3><p class="mt-2 text-gray-500">256GB · Titanium</p><div class="mt-5 flex items-center justify-between gap-3"><span class="text-xl font-bold text-blue-600">₦2,450,000</span><a href="product.html" class="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">Buy Now</a></div></div></article>
+        <article class="overflow-hidden rounded-xl border transition hover:shadow-xl"><img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500" alt="Samsung Galaxy S26 Ultra" class="h-64 w-full object-cover"><div class="p-5"><h3 class="text-xl font-bold">Samsung Galaxy S26 Ultra</h3><p class="mt-2 text-gray-500">512GB · Black</p><div class="mt-5 flex items-center justify-between gap-3"><span class="text-xl font-bold text-blue-600">₦2,100,000</span><a href="product.html" class="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">Buy Now</a></div></div></article>
+        <article class="overflow-hidden rounded-xl border transition hover:shadow-xl"><img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=500" alt="Tecno Phantom Ultimate" class="h-64 w-full object-cover"><div class="p-5"><h3 class="text-xl font-bold">Tecno Phantom Ultimate</h3><p class="mt-2 text-gray-500">256GB · Blue</p><div class="mt-5 flex items-center justify-between gap-3"><span class="text-xl font-bold text-blue-600">₦890,000</span><a href="product.html" class="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">Buy Now</a></div></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-16 border-t border-zinc-800 bg-[#0b0b0b] text-gray-400">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:grid-cols-2 sm:px-6 lg:grid-cols-4">
+      <div>
+        <a href="in.html" class="text-2xl font-bold text-white"><span class="text-red-500">chisomPhone</span>Store</a>
+        <p class="mt-4 max-w-xs text-sm leading-6">Find the latest phones, great prices, and accessories you can trust.</p>
+        <div class="mt-5 flex gap-4 text-lg">
+          <a href="#" aria-label="Facebook" class="transition hover:text-red-500"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="transition hover:text-red-500"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter" class="transition hover:text-red-500"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Shop</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="product.html" class="transition hover:text-red-500">All Products</a></li>
+          <li><a href="Brands.html" class="transition hover:text-red-500">Brands</a></li>
+          <li><a href="#" class="transition hover:text-red-500">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Customer Care</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="#" class="transition hover:text-red-500">Contact Us</a></li>
+          <li><a href="#" class="transition hover:text-red-500">Delivery &amp; Returns</a></li>
+          <li><a href="#" class="transition hover:text-red-500">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Get in touch</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-red-500"></i><span>Lagos, Nigeria</span></li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone mt-1 text-red-500"></i><a href="tel:+2348000000000" class="transition hover:text-red-500">+234 08167830788</a></li>
+          <li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-red-500"></i><a href="mailto:hello@chisomphonestore.com" class="transition hover:text-red-500">chisomphonestore@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const categoryMenuToggle = document.getElementById('categoryMenuToggle');
+    const categoryMobileMenu = document.getElementById('categoryMobileMenu');
+
+    if (categoryMenuToggle && categoryMobileMenu) {
+      categoryMenuToggle.addEventListener('click', () => {
+        const isOpen = categoryMenuToggle.getAttribute('aria-expanded') === 'true';
+        categoryMenuToggle.setAttribute('aria-expanded', String(!isOpen));
+        categoryMobileMenu.classList.toggle('hidden');
+        const icon = categoryMenuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-xmark');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhoneShop | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="navbar.js" defer></script>
+</head>
+
+<body class="bg-black text-white">
+  <nav class="bg-zinc-950 shadow-md shadow-black/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between gap-4 py-4">
+        <a href="in.html" class="text-2xl sm:text-3xl font-bold text-blue-600">PhoneShop</a>
+
+        <form class="hidden md:flex w-1/2" action="#">
+          <label for="search" class="sr-only">Search phones</label>
+          <input id="search" type="search" placeholder="Search phones..."
+            class="w-full rounded-l-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="bg-blue-600 text-white px-6 rounded-r-lg hover:bg-blue-700"
+            aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+
+        <div class="flex items-center gap-4 sm:gap-6 text-gray-300">
+          <button id="categoryMenuToggle" type="button" class="md:hidden hover:text-blue-500"
+            aria-label="Open navigation menu" aria-expanded="false" aria-controls="categoryMobileMenu">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+          <a href="#" aria-label="My account" class="hover:text-blue-600"><i class="far fa-user text-xl"></i></a>
+          <a href="#" aria-label="Wishlist" class="hover:text-blue-600"><i class="far fa-heart text-xl"></i></a>
+          <a href="#" aria-label="Shopping cart" class="relative hover:text-blue-600"><i
+              class="fas fa-shopping-cart text-xl"></i><span
+              class="absolute -top-2 -right-3 bg-red-500 text-white text-xs rounded-full px-1.5 py-0.5">2</span></a>
+        </div>
+      </div>
+
+      <div
+        class="hidden md:flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-zinc-800 py-3 text-sm font-medium text-gray-300">
+        <a href="index.html" class="hover:text-red-500">Home</a>
+        <a href="product.html" class="hover:text-blue-600">Products</a>
+        <a href="Brands.html" class="hover:text-blue-600">Brands</a>
+        <a href="categories.html" class="text-blue-600">Categories</a>
+        <a href="about.html" class="hover:text-blue-600">About</a>
+        <a href="contact.html" class="hover:text-blue-600">Contact</a>
+      </div>
+
+      <div id="categoryMobileMenu" class="hidden border-t border-zinc-800 py-4 md:hidden">
+        <form class="flex" action="#">
+          <label for="mobile-search" class="sr-only">Search phones</label>
+          <input id="mobile-search" type="search" placeholder="Search phones..."
+            class="w-full rounded-l-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="rounded-r-lg bg-blue-600 px-4 text-white hover:bg-blue-700"
+            aria-label="Search"><i class="fas fa-search"></i></button>
+        </form>
+        <div class="mt-4 flex flex-col items-center gap-4 text-sm font-medium text-gray-300">
+          <a href="in.html" class="hover:text-blue-500">Home</a>
+          <a href="product.html" class="hover:text-blue-500">Products</a>
+          <a href="Brands.html" class="hover:text-blue-500">Brands</a>
+          <a href="categories.html" class="text-blue-500">Categories</a>
+          <a href="about.html" class="hover:text-blue-500">About</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+
+  <!-- Hero -->
+
+  <section class="bg-[#111]">
+
+    <div class="max-w-7xl mx-auto grid gap-10 lg:grid-cols-2 items-center py-10 sm:py-16 px-4 md:px-0">
+
+      <!-- Left -->
+
+      <div class="text-center lg:text-left">
+
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          Latest Phones,<br>
+          Best Prices
+        </h1>
+
+        <p class="text-gray-400 mt-4 sm:mt-6 text-base sm:text-lg">
+          Discover the newest smartphones with amazing features and unbeatable prices.
+        </p>
+
+        <button class="bg-red-500 px-8 py-4 rounded-lg mt-8 sm:mt-10 hover:bg-red-600 duration-300">
+          Shop Now →
+        </button>
+
+        <div class="grid gap-4 sm:grid-cols-3 mt-8 sm:mt-14">
+
+          <div class="flex items-center gap-3 justify-center lg:justify-start">
+            <i class="fa-solid fa-truck text-xl sm:text-2xl"></i>
+
+            <div>
+              <p class="font-semibold text-sm sm:text-base">Free Shipping</p>
+              <p class="text-gray-500 text-xs sm:text-sm">On all orders</p>
+            </div>
+
+          </div>
+
+          <div class="flex items-center gap-3 justify-center lg:justify-start">
+
+            <i class="fa-solid fa-clock text-xl sm:text-2xl"></i>
+
+            <div>
+
+              <p class="font-semibold text-sm sm:text-base">Money Back</p>
+              <p class="text-gray-500 text-xs sm:text-sm">30 Days Return</p>
+
+            </div>
+
+          </div>
+
+          <div class="flex items-center gap-3 justify-center lg:justify-start">
+
+            <i class="fa-solid fa-lock text-xl sm:text-2xl"></i>
+
+            <div>
+
+              <p class="font-semibold text-sm sm:text-base">Secure Payment</p>
+              <p class="text-gray-500 text-xs sm:text-sm">100% Secure</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right -->
+
+      <div class="flex justify-center lg:justify-end">
+        <img src="pic 2.jpeg" class="w-full max-w-[600px] h-auto object-contain" alt="Latest phone model">
+      </div>
+
+    </div>
+
+  </section>
+  <section class="max-w-7xl mx-auto py-10 px-4 sm:px-6">
+
+    <!-- Heading -->
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-8">
+      <h2 class="text-2xl sm:text-3xl font-bold">New Products</h2>
+      <a href="product.html" class="text-red-500 hover:underline">View All</a>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic.4.jpeg" class="w-full h-52 object-contain" alt="iPhone 15 Pro Max">
+
+        <h3 class="font-semibold mt-4">iPhone 15 Pro Max</h3>
+        <p class="text-gray-400 text-sm">Apple</p>
+
+        <p class="text-2xl font-bold mt-2">$1,199</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 5.jpeg" class="w-full h-52 object-contain" alt="Samsung Galaxy S24 Ultra">
+
+        <h3 class="font-semibold mt-4">Samsung Galaxy S24 Ultra</h3>
+        <p class="text-gray-400 text-sm">Samsung</p>
+
+        <div class="flex gap-2 items-center mt-2">
+          <span class="text-2xl font-bold">$999</span>
+          <span class="text-gray-500 line-through">$1,199</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 4.jpeg" class="w-full h-52 object-contain" alt="Google Pixel 8 Pro">
+
+        <h3 class="font-semibold mt-4">Google Pixel 8 Pro</h3>
+        <p class="text-gray-400 text-sm">Google</p>
+
+        <p class="text-2xl font-bold mt-2">$899</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">blue</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 6.jpeg" class="w-full h-52 object-contain" alt="OnePlus 12">
+
+        <h3 class="font-semibold mt-4">OnePlus 12</h3>
+        <p class="text-gray-400 text-sm">OnePlus</p>
+
+        <div class="flex gap-2 items-center mt-2">
+          <span class="text-2xl font-bold">$699</span>
+          <span class="text-gray-500 line-through">$799</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 7.jpeg" class="w-full h-52 object-contain" alt="Xiaomi 14">
+
+        <h3 class="font-semibold mt-4">Xiaomi 14</h3>
+        <p class="text-gray-400 text-sm">Xiaomi</p>
+
+        <p class="text-2xl font-bold mt-2">$799</p>
+      </div>
+
+    </div>
+
+  </section>
+  <div
+    class="relative w-full max-w-6xl h-72 rounded-3xl overflow-hidden bg-gradient-to-r from-blue-600 to-blue-900 mx-auto px-4">
+
+    <!-- Circle Background -->
+    <div class="absolute right-0 top-0 w-full h-full opacity-20">
+      <div class="absolute right-20 top-1/2 -translate-y-1/2 w-96 h-96 border border-white rounded-full"></div>
+      <div class="absolute right-28 top-1/2 -translate-y-1/2 w-80 h-80 border border-white rounded-full"></div>
+      <div class="absolute right-36 top-1/2 -translate-y-1/2 w-64 h-64 border border-white rounded-full"></div>
+      <div class="absolute right-44 top-1/2 -translate-y-1/2 w-48 h-48 border border-white rounded-full"></div>
+    </div>
+
+    <!-- Content -->
+    <div
+      class="w-full relative z-10 flex flex-col md:flex-row justify-between items-center h-full px-6 md:px-10 mt-16 gap-6">
+
+      <!-- Left -->
+      <div class="max-w-xl">
+        <h1 class="text-5xl font-bold text-white">
+          Apple AirPods
+        </h1>
+
+        <p class="text-gray-200 text-2xl mt-3">
+          Up to 10% Discount
+        </p>
+
+        <button class="mt-8 bg-white text-blue-700 font-semibold px-8 py-3 rounded-full hover:bg-gray-200 transition">
+          Buy Now
+        </button>
+      </div>
+
+      <!-- left -->
+      <div>
+        <img src="pic 8.jpeg" alt="AirPods" class="w-full max-w-[520px] h-auto object-contain">
+      </div>
+
+    </div>
+
+    <!-- Slider Dots -->
+    <div class="absolute bottom-5 left-1/2 -translate-x-1/2 flex gap-3">
+      <span class="w-6 h-2 rounded-full bg-white"></span>
+      <span class="w-2 h-2 rounded-full bg-white/50 rounded-full"></span>
+    </div>
+
+  </div>
+
+
+
+  <section class="max-w-7xl mx-auto py-10 px-4 sm:px-6">
+
+    <!-- Heading -->
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-8">
+      <h2 class="text-2xl sm:text-3xl font-bold">Featured Products</h2>
+      <a href="#" class="text-red-500 hover:underline">View All</a>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 9.jpeg" class="w-full h-52 object-contain" alt="Samsung Galaxy S24">
+
+        <h3 class="font-semibold mt-4">samsung Galaxy S24 </h3>
+        <p class="text-gray-400 text-sm">samsung</p>
+
+        <p class="text-2xl font-bold mt-2">$699</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 10.jpeg" class="w-full h-52 object-contain" alt="Nothing phone (2)">
+
+        <h3 class="font-semibold mt-4">Nothing phone (2)</h3>
+        <p class="text-gray-400 text-sm">Nothing</p>
+
+        <div class="flex gap-2 items-center mt-2">
+          <span class="text-2xl font-bold">$599</span>
+          <span class="text-gray-500 line-through">$1,199</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic11.jpeg" class="w-full h-52 object-contain" alt="Vivo x100 pro">
+
+        <h3 class="font-semibold mt-4">Vivo x100 pro</h3>
+        <p class="text-gray-400 text-sm">Vivo</p>
+
+        <p class="text-2xl font-bold mt-2">$799</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 12.jpeg" class="w-full h-52 object-contain" alt="Realme GT 5 pro">
+
+        <h3 class="font-semibold mt-4">Realme GT 5 pro</h3>
+        <p class="text-gray-400 text-sm">Realme</p>
+
+        <div class="flex gap-2 items-center mt-2">
+          <span class="text-2xl font-bold">$649</span>
+          <span class="text-gray-500 line-through">$799</span>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-zinc-900 rounded-xl p-4 relative">
+        <span class="absolute top-3 left-3 bg-blue-500 text-xs px-2 py-1 rounded">New</span>
+
+        <button class="absolute top-3 right-3 text-white text-xl">
+          ♡
+        </button>
+
+        <img src="pic 13.jpeg" class="w-full h-52 object-contain" alt="Oppo Find X7 Ultra">
+
+        <h3 class="font-semibold mt-4">oppo find X7 Ultra</h3>
+        <p class="text-gray-400 text-sm">OPPo</p>
+
+        <p class="text-2xl font-bold mt-2">$899</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script>
+    const loveToggle = document.querySelector('[data-love-toggle]');
+    if (loveToggle) {
+      loveToggle.addEventListener('click', function () {
+        this.textContent = this.textContent.trim() === '♡' ? '♥' : '♡';
+        this.classList.add('text-red-500');
+        this.classList.add('scale-110');
+        setTimeout(() => this.classList.remove('scale-110'), 150);
+      });
+    }
+
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileSearchToggle = document.getElementById('mobileSearchToggle');
+    const mobileSearch = document.getElementById('mobileSearch');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('flex');
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+          icon.classList.toggle('fa-bars');
+          icon.classList.toggle('fa-xmark');
+        }
+      });
+    }
+
+    if (mobileSearchToggle && mobileSearch) {
+      mobileSearchToggle.addEventListener('click', () => {
+        const expanded = mobileSearchToggle.getAttribute('aria-expanded') === 'true';
+        mobileSearchToggle.setAttribute('aria-expanded', String(!expanded));
+        mobileSearch.classList.toggle('hidden');
+      });
+    }
+  </script>
+
+  <footer class="mt-16 border-t border-zinc-800 bg-[#0b0b0b] text-gray-400">
+    <div class="max-w-7xl mx-auto grid gap-10 px-4 py-12 sm:grid-cols-2 lg:grid-cols-4 sm:px-6">
+      <div>
+        <a href="in.html" class="text-2xl font-bold text-white"><span class="text-red-500">chisomPhone</span>Store</a>
+        <p class="mt-4 max-w-xs text-sm leading-6">Find the latest phones, great prices, and accessories you can trust.
+        </p>
+        <div class="mt-5 flex gap-4 text-lg">
+          <a href="#" aria-label="Facebook" class="hover:text-red-500 transition"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram" class="hover:text-red-500 transition"><i
+              class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter" class="hover:text-red-500 transition"><i
+              class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Shop</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="product.html" class="hover:text-red-500 transition">All Products</a></li>
+          <li><a href="Brands.html" class="hover:text-red-500 transition">Brands</a></li>
+          <li><a href="#" class="hover:text-red-500 transition">New Arrivals</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Customer Care</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="#" class="hover:text-red-500 transition">Contact Us</a></li>
+          <li><a href="#" class="hover:text-red-500 transition">Delivery & Returns</a></li>
+          <li><a href="#" class="hover:text-red-500 transition">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="font-semibold text-white">Get in touch</h2>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li class="flex gap-3"><i class="fa-solid fa-location-dot mt-1 text-red-500"></i><span>Lagos, Nigeria</span>
+          </li>
+          <li class="flex gap-3"><i class="fa-solid fa-phone mt-1 text-red-500"></i><a href="tel:+2348000000000"
+              class="hover:text-red-500 transition">+234 08167830788</a></li>
+          <li class="flex gap-3"><i class="fa-solid fa-envelope mt-1 text-red-500"></i><a
+              href="mailto:hello@chisomphonestore.com"
+              class="hover:text-red-500 transition">chisomphonestore@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-zinc-800">
+      <div
+        class="max-w-7xl mx-auto flex flex-col gap-3 px-4 py-5 text-center text-xs sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:text-left">
+        <p>© 2026 chisomPhoneStore. All rights reserved.</p>
+        <div class="flex justify-center gap-4"><a href="#" class="hover:text-white transition">Privacy</a><a href="#"
+            class="hover:text-white transition">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
